@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Butler CAM Support</title>
+<style>
+:root { color-scheme: light dark; --bg:#f6f6f9; --card:#ffffff; --ink:#1d1e24; --sub:#62646f; --edge:#e2e3ea; --accent:#5a5fd0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1d1e24; --card:#26272e; --ink:#ececf1; --sub:#a2a4b2; --edge:#373842; --accent:#a3aaf5; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding:40px 16px 64px; }
+main { max-width:680px; margin:0 auto; }
+h1 { font-size:32px; line-height:1.2; margin:0 0 6px; }
+h2 { font-size:20px; margin:30px 0 8px; }
+h3 { font-size:17px; margin:18px 0 2px; }
+p, ol { margin:0 0 12px; }
+ol { padding-left:24px; }
+.sub { color:var(--sub); margin-bottom:24px; }
+.contact { background:var(--card); border:1px solid var(--edge); border-radius:14px; padding:16px 20px; }
+.contact p { margin:0; }
+a { color:var(--accent); overflow-wrap:anywhere; }
+footer { margin-top:40px; color:var(--sub); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Butler CAM Support</h1>
+<p class="sub">Help with Butler CAM for Mac and iPad.</p>
+
+<div class="contact"><p><strong>Need a hand?</strong> Email <a href="mailto:joshua@butlermakes.com">joshua@butlermakes.com</a>. Tell us whether you're on a Mac or iPad, your app version, and what happened. The version is in the app under Help &gt; About.</p></div>
+
+<h2>Make your first sign</h2>
+<ol>
+<li>Press New Job, type the size of your board, pick its wood and where zero is, then press Create.</li>
+<li>Draw a rectangle round the edge, then pick Aa and click to add your words.</li>
+<li>Pick the rectangle and press Cut Out. It cuts the sign out, with tabs to hold it.</li>
+<li>Pick the words and press V-Carve for sharp lettering, or Pocket to clear them out.</li>
+<li>Press 3D to watch it cut, then Save G-code and run the file on your machine.</li>
+</ol>
+
+<h2>Before you cut</h2>
+<ol>
+<li>Clamp or screw the board down, away from where the bit will go.</li>
+<li>Fit the first bit, then set X0 Y0 and Z0 on the machine where the Save G-code tab says.</li>
+<li>If the job uses more than one bit, the machine pauses. Change the bit, set Z0 again, and press Resume.</li>
+<li>First time? Run it with Z set an inch high (an air cut) to check where it goes.</li>
+</ol>
+<p>Always check a job before you run it and follow your machine's safety instructions. You are responsible for how your machine is set up and run.</p>
+
+<h2>Common questions</h2>
+<h3>Which machines does it work with?</h3>
+<p>Butler CAM saves G-code for GRBL 1.1, grblHAL and machines that use standard G-code. Choose your machine when you save.</p>
+<h3>Does it control my CNC?</h3>
+<p>No. It makes a G-code file, and you run that file with your machine's own control software.</p>
+<h3>Which files can I bring in?</h3>
+<p>SVG and DXF drawings, and PNG, JPEG and HEIC pictures. You can also export your drawing as SVG or DXF.</p>
+<h3>How do I use a laser?</h3>
+<p>Pick shapes and press Laser Cut or Laser Fill, or press Laser Picture and choose a picture. Save G-code makes a separate laser file. On GRBL, run it with laser mode on ($32=1) and the laser focused on the top of the material.</p>
+<h3>Do my projects work on both Mac and iPad?</h3>
+<p>Yes. A project saved on one opens on the other. Move it by any means you like, such as iCloud Drive or AirDrop.</p>
+<h3>How do I use Apple Pencil?</h3>
+<p>Tap the hand at the top right. The Pencil then draws and your finger moves the view. Double-tap the Pencil to switch between your tool and Select.</p>
+<h3>Can I use it on iPhone?</h3>
+<p>Not at this time. Butler CAM is made for Mac and iPad.</p>
+
+<h2>Privacy</h2>
+<p>Butler CAM doesn't collect your data. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>© 2026 Butler Makes LLC</footer>
+</main>
+</body>
+</html>
